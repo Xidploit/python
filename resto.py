@@ -1,11 +1,15 @@
 def menuutama():
     print("")
+    print ("____________________________________")
+    print ("Autor by : MR_XiD")
+    print ("Ini Hanyalah rekayasa mesin kasir")
+    print ("gunakan dengan bijak")
+    print ("____________________________________")
     n = raw_input('masukkan nama Konsumen: ')
     print 'Nama Konsumen :',n
     print """Masukkan Pilihan
            1. Bayar
            2. Keluar"""
-          "3. info pembuat"
     print("")
 
 
@@ -67,7 +71,7 @@ class makanan():
         jmlhpsn = x * 5000
         pajak = jmlhpsn * 0.1
         total = jmlhpsn + pajak
-        print 'Harga MIE AYAM = Rp 8000'
+        print 'Harga Gado-gado = Rp 5000'
         print ''
         print 'Total Makanan = Rp ',jmlhpsn
         print 'Pajak = Rp ',pajak
@@ -142,16 +146,11 @@ def back_menu():
         print("")
     else:
         print 'Terima Kasih !'
+        print 'semoga Bermanfaat !'
+        print 'Autor : MR_XiD'
         exit
 
 
-def info_pembuat3():
-    print 'autor   : Safri N.Q'
-    print 'my team : D35TR0Y SQUAD'
-   else:
-    print 'Terima kasih !!'
-    exit
-    
 def pilihan():
     
     x = input ("Masukan Pilihan : ")
@@ -164,7 +163,7 @@ def pilihan():
                        2. MIE AYAM
                        3. SOTO AYAM
                        4. SOTO MIE
-                       5. MIE AYAM
+                       5. GADO - GADO
                        6. Minuman"""
         pil = int (input('Masukkan pilihan anda : '))
         print
@@ -215,7 +214,7 @@ def pilihan():
         print
         if pil == 1:
             print ("")
-            z = input ('Jumlah gelas : ')
+            z = input ('Jumlah gelas bro : ')
             mn.airmineral(z)
             pil=6
             back_menu()
